@@ -1,0 +1,13 @@
+.editorconfig
+.prettierignore
+.prettierrc.json
+
+CHANGELOG.md
+commitlint.config.mjs
+cspell.json
+eslint.config.mjs
+
+.github/
+.husky/
+
+src/

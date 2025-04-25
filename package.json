@@ -1,7 +1,7 @@
 {
   "name": "@datr.tech/db-proc",
   "description": "API for proc",
-  "version": "0.3.6",
+  "version": "0.3.7",
   "private": false,
   "homepage": "https://github.com/datr.tech/db-proc",
   "repository": {

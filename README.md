@@ -1,6 +1,6 @@
 ## @datr.tech/db-proc
 
-> DB for proc - 0.3.5
+> DB for proc - 0.3.7
 
 ---
 

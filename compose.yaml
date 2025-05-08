@@ -1,11 +1,19 @@
 services:
   db-proc:
     build: .
+    container_name: db-proc
     restart: always
     environment:
-      - MONGO_INITDB_ROOT_USERNAME=${DB_ROOT_USER}
-      - MONGO_INITDB_ROOT_PASSWORD=${DB_ROOT_PASS}
+      - PUID=1000
+      - PGID=1000
       - DB_PORT=${DB_PORT}
       - DB_NAME=${DB_NAME}
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongo db:${DB_PORT}/${DB_NAME} --quiet
+      interval: 30s
+      timeout: 10s
+      retries: 5
     networks: 
       - net-proc
+    # volumes:
+    #  - ./data/db:/data/db

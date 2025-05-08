@@ -7,5 +7,15 @@
     }
   ],
   "version": "0.2",
-  "words": ["datr", "proc", "INITDB"]
+  "words": [
+    "datr",
+    "dolomite",
+    "freight",
+    "granul8",
+		"proc",
+    "healthcheck",
+    "INITDB",
+    "PGID",
+    "PUID"
+  ]
 }
